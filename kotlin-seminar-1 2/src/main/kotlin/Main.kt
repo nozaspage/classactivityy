@@ -1,0 +1,31 @@
+fun section(title: String, block: () -> Unit) {
+    println("=== $title ===")
+    block()
+    println()
+}
+
+fun main() {
+    section("1.1 Sensor log", ::exercise11)
+    section("1.2 Vending machine", ::exercise12)
+    section("2.1 Order confirmation", ::exercise21)
+    section("2.2 Printable receipt", ::exercise22)
+    section("3.1 Predict the output", ::exercise31)
+    section("4.1 Playlist", ::exercise41)
+    section("4.2 Cafe menu", ::exercise42)
+    section("4.3 Attendance", ::exercise43)
+    section("5.1 Grades", ::exercise51)
+    section("5.2 Launch countdown", ::exercise52)
+    section("5.3 PIN entry", ::exercise53)
+    section("5.4 FizzBuzz", ::exercise54)
+    section("6.1 Notification", ::exercise61)
+    section("6.2 Single-expression", ::exercise62)
+    section("6.3 Lambda filter", ::exercise63)
+    section("6.4 Digit sum", ::exercise64)
+    section("7.1 Book", ::exercise71)
+    section("7.2 Book data class", ::exercise72)
+    section("7.3 Student average", ::exercise73)
+    section("8.1 Safe length", ::exercise81)
+    section("8.2 describeString", ::exercise82)
+    section("8.3 First valid reading", ::exercise83)
+    section("9.1 Naming", ::exercise91)
+}
